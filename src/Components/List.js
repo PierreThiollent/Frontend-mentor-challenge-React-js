@@ -16,11 +16,13 @@ const List = () => {
     })();
   }, [setcountries]);
 
-  return countries.map(country => (
+  return (
     <div id='countries' className='container countries'>
-      <Item country={country} />
+      {countries.map((country, index) => (
+        <Item country={country} key={index} />
+      ))}
     </div>
-  ));
+  );
 };
 
 export default List;
