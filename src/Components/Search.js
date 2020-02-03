@@ -8,9 +8,9 @@ const Search = () => {
   const [dropdownVisible, setDropdownVisible] = useState(false);
   return (
     <section>
-      <div class='container'>
-        <input id='search' class='search' type='text' placeholder='Search for a country' />
-        <div id='filter' class='dropdown' onClick={() => setDropdownVisible(!dropdownVisible)}>
+      <div className='container'>
+        <input id='search' className='search' type='text' placeholder='Search for a country' />
+        <div id='filter' className='dropdown' onClick={() => setDropdownVisible(!dropdownVisible)}>
           Filter by region
           <FontAwesomeIcon className='fas fa-chevron-down' icon={faChevronDown} />
           {dropdownVisible && (
