@@ -3,17 +3,9 @@ import '../Style/Search.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
-const Search = () => {
+const Search = ({ value, handleChangeValue }) => {
   // State to manage the visibility of dropdown menu
   const [dropdownVisible, setDropdownVisible] = useState(false);
-
-  // State to manage the value of the input
-  const [value, setvalue] = useState('');
-
-  // Method to set the value of the input
-  const handleChangeValue = value => {
-    setvalue(value);
-  };
 
   // Method to toggle the dropdown
   const toggleDropdown = () => {
