@@ -1,8 +1,9 @@
 import React from 'react';
 import '../Style/Item.css';
+import { Link } from 'react-router-dom';
 
 const Item = ({ country }) => (
-  <>
+  <Link to='/details'>
     <div className='country'>
       <div>
         <img src={country.flag} alt={country.name} />
@@ -23,7 +24,7 @@ const Item = ({ country }) => (
         </p>
       </div>
     </div>
-  </>
+  </Link>
 );
 
 export default Item;
