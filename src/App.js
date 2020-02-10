@@ -1,15 +1,20 @@
 import React from 'react';
 import './Style/App.css';
-import Header from './Components/Header';
-import Search from './Components/Search';
-import List from './Components/List';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home from './Screens/Home';
+import Details from './Screens/Details';
 
 const App = () => (
-  <>
-    <Header />
-    <Search />
-    <List />
-  </>
+  <Router>
+    <Switch>
+      <Route exact path='/'>
+        <Home />
+      </Route>
+      <Route path='/details'>
+        <Details />
+      </Route>
+    </Switch>
+  </Router>
 );
 
 export default App;
