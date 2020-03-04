@@ -1,0 +1,33 @@
+/* Header */
+header {
+  background-color: var(--background-el);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.12);
+}
+
+header .container h1 {
+  margin: 0;
+}
+
+header .btn-toggle-dark-mode {
+  background-color: var(--background-el);
+  color: inherit;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 120px;
+}
+
+header .btn-toggle-dark-mode .fas {
+  display: none;
+}
+
+body.dark header .btn-toggle-dark-mode .fas {
+  display: inline-block;
+}
+
+body.dark header .btn-toggle-dark-mode .far {
+  display: none;
+}
