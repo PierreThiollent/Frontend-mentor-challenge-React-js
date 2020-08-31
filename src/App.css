@@ -10,6 +10,14 @@
   --body: hsl(0, 0%, 98%);
 }
 
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
 body {
   font-family: 'Nanito sans', sans-serif;
   color: hsl(200, 15%, 8%);

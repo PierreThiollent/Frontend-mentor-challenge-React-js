@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import Item from '../Components/Item';
-import '../Style/List.css';
+import Item from '../Item/Item';
+import './List.css';
 
 const List = () => {
   // State to store countries

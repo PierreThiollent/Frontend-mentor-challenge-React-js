@@ -1,9 +1,15 @@
 import React from 'react';
-import '../Style/Item.css';
+import './Item.css';
 import { Link } from 'react-router-dom';
 
 const Item = ({ country }) => (
-  <Link to='/details'>
+  <Link
+    to={{
+      pathname: '/details',
+      state: {
+        country: country,
+      },
+    }}>
     <div className='country'>
       <div>
         <img src={country.flag} alt={country.name} />

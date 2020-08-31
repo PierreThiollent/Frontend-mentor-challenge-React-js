@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Style/Header.css';
+import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon as faMoonDark } from '@fortawesome/free-solid-svg-icons';
 import { faMoon as faMoonLignt } from '@fortawesome/free-regular-svg-icons';

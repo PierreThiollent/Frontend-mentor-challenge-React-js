@@ -1,18 +1,14 @@
 import React from 'react';
-import './Style/App.css';
+import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Home from './Screens/Home';
-import Details from './Screens/Details';
+import Home from './Pages/Home';
+import Details from './Pages/Details';
 
 const App = () => (
   <Router>
     <Switch>
-      <Route exact path='/'>
-        <Home />
-      </Route>
-      <Route path='/details'>
-        <Details />
-      </Route>
+      <Route exact path='/' component={Home} />
+      <Route exact path='/details' component={Details} />
     </Switch>
   </Router>
 );
