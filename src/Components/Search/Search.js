@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Style/Search.css';
+import './Search.css';
 import SearchInput from './SearchInput';
 import SearchDropdown from './SearchDropdown';
 
